@@ -33,7 +33,8 @@ public class AuthorService {
         return authorRepository.findAll();
     }
 
-    public Author getAllAuthorById(int id) {
+    public Author getAuthorById(int id) {
+
         return authorRepository.findById(id).get();
     }
 }

@@ -15,14 +15,10 @@ public class Transactions {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Enumerated(value = EnumType.STRING)
     private TransactionStatus transactionStatus;
-
     private int fine;
-
     private String transactionId = UUID.randomUUID().toString();
-
     @CreationTimestamp
     private Date transactionDate;
 

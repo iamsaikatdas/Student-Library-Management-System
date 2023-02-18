@@ -1,4 +1,4 @@
-package com.example.Student_library_management_system.Controllers;
+package com.example.Student_library_management_system.Service.Controllers;
 
 import com.example.Student_library_management_system.DTOs.StudentUpdateEmailDto;
 import com.example.Student_library_management_system.DTOs.StudentUpdatePhoneNo;

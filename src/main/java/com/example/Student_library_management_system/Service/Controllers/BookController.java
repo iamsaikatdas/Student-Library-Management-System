@@ -1,4 +1,4 @@
-package com.example.Student_library_management_system.Controllers;
+package com.example.Student_library_management_system.Service.Controllers;
 
 import com.example.Student_library_management_system.DTOs.BookEntryDto;
 import com.example.Student_library_management_system.DTOs.IssueBookRequestDto;
@@ -17,10 +17,6 @@ public class BookController {
     @PostMapping("/add")
     public String addBook(@RequestBody BookEntryDto bookEntryDto){
         return bookService.addBook(bookEntryDto);
-    }
-    @GetMapping("/getBookById/{id}")
-    public Book getBookById(@PathVariable int id){
-        return bookService.getBookById(id);
     }
 
 }

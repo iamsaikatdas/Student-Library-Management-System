@@ -1,4 +1,4 @@
-package com.example.Student_library_management_system.Controllers;
+package com.example.Student_library_management_system.Service.Controllers;
 
 import com.example.Student_library_management_system.DTOs.AuthorEntryDto;
 import com.example.Student_library_management_system.Models.Author;
@@ -25,9 +25,11 @@ public class AuthorController {
         return authorService.getAllAuthor();
     }
 
-    @GetMapping("/getAllAuthorById/{id}")
-    public Author getAllAuthorById(@PathVariable int id){
-        return authorService.getAllAuthorById(id);
+    @GetMapping("/getAllAuthorById")
+    public Author getAuthorById(@RequestBody int id){
+        return authorService.getAuthorById(id);
     }
+
+
 }
 
